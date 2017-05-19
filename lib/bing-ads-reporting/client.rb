@@ -1,3 +1,5 @@
+require 'curb'
+
 module BingAdsReporting
   class Client
     include Formatter
