@@ -10,7 +10,7 @@ module BingAdsReporting
       log_level = settings[:log_level] || :info
       @logger = logger
       @soap_client = Savon.client({
-        wsdl: "https://api.bingads.microsoft.com/Api/Advertiser/Reporting/V9/ReportingService.svc?wsdl",
+        wsdl: "https://api.bingads.microsoft.com/Api/Advertiser/Reporting/V11/ReportingService.svc?wsdl",
         namespaces: {"xmlns:arr" => 'http://schemas.microsoft.com/2003/10/Serialization/Arrays'},
         soap_header: soap_header,
         log_level: log_level,
